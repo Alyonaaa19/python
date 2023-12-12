@@ -12,8 +12,16 @@ if user_select not in list_of_selection:
 random_select = random.choice(list_of_selection)
 print(random_select)
 
-
 if user_select == random_select:
- print("Ви вгадали")
+    print("Нічия")
+elif user_select == ("Ножиці") and random_select == ("Папір"):
+    print("Ти виграв")
+elif user_select == ("Камінь") and random_select == ("Ножиці"):
+    print("Ти виграв")
+elif user_select == ("Папір") and random_select == ("Камінь"):
+    print("Ти виграв")
 else:
-    print("Ви не вгадали")
+    print("Ти програв")
+
+
+
